@@ -1,0 +1,10 @@
+/build*/
+.qtcreator/
+*.user
+*.user.*
+*.exe
+*.dll
+*.o
+*.obj
+.DS_Store
+.env

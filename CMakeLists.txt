@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.16)
+project(MiniBasic LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
+add_executable(MiniBasic main.cpp mainwindow.cpp mainwindow.h mainwindow.ui
+    expression.cpp expression.h parser.cpp parser.h statement.cpp statement.h)
+target_link_libraries(MiniBasic PRIVATE Qt6::Widgets)
